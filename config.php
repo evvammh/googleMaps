@@ -10,7 +10,7 @@ $DB_USER = "root";
 $DB_PASSWORD = "";
 $DB_HOST = "localhost";
 define("DBPREFIX", "");
-
+the done [jfsgorhjgahages 
 //Configuration Variables
 $conf_obj=new dbcon;
 $conf_obj->Query("select * from ".DBPREFIX."config");
