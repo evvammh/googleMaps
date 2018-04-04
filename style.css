@@ -1,0 +1,121 @@
+#menu {
+	list-style:  none;
+	padding: 0;
+	margin-left: 1200;
+	text-align:center;
+	
+}
+#menu span {
+	display: none;
+	position: relative;
+}
+#menu a {
+	display: block;
+	text-indent: -900%;
+	position: absolute;
+	
+}
+#menu a:hover {
+	background-position: left bottom;
+}
+#menu a:hover span{
+	display: block;
+}
+#menu .home {
+	width: 200px;
+	height: 54px;
+	background: url(images/nav_home_1.png) no-repeat;
+	left: 125px;
+	top: 60px;
+}
+
+#menu .home span {
+	width: 200px;
+	height: 58px;
+	background: url(images/nav_home_2.png) no-repeat;
+}
+#menu .courses {
+	width: 200px;
+	height: 54px;
+	background: url(images/nav_courses_1.png) no-repeat;
+	left: 235px;
+	top: 60px;
+}
+
+#menu .courses span {
+	width: 200px;
+	height: 50px;
+	background: url(images/nav_courses_2.png) no-repeat;
+}
+#menu .register {
+	width: 300px;
+	height: 54px;
+	background: url(images/nav_register_1.png) no-repeat;
+	left: 325px;
+	top: 60px;
+}
+#menu .register span {
+	width: 200px;
+	height: 50px;
+	background: url(images/nav_register_2.png) no-repeat;
+
+}
+#menu .userforum {
+	width: 200px;
+	height: 54px;
+	background: url(images/nav_userforum_1.png) no-repeat;
+	left:435px;
+	top: 60px;
+}
+#menu .userforum span {
+	width: 200px;
+	height: 50px;
+	background: url(images/nav_userforum_2.png) no-repeat;
+	
+}
+#menu .reviews {
+	width: 220px;
+	height: 54px;
+	background: url(images/nav_reviews_1.png) no-repeat;
+	left: 565px;
+	top: 60px;
+}
+
+#menu .reviews span {
+	width: 200px;
+	height: 50px;
+	background: url(images/nav_reviews_2.png) no-repeat;
+
+}
+
+#menu .contact {
+	width: 220px;
+	height: 54px;
+	background: url(images/nav_contact_1.png) no-repeat;
+	left: 730px;
+	top: 60px;
+}
+
+#menu .contact span {
+	width: 220px;
+	height: 50px;
+	background: url(images/nav_contact_2.png) no-repeat;
+
+}
+#menu .about {
+	width: 350px;
+	height: 54px;
+	background: url(images/nav_about_1.png) no-repeat;
+	left:850px;
+	top: 60px;
+	
+}
+
+#menu .about span {
+	width:350;
+	height: 50px;
+	background: url(images/nav_about_2.png) no-repeat;
+
+}
+
+

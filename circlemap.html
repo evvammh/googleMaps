@@ -1,0 +1,143 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>
+
+    <title>Draw a Circle with Google Maps</title>
+
+    
+
+	<script src="http://maps.google.com/maps?file=api&v=1&key=ABQIAAAAvwRoIm8IF058qTy5VcIi1xQISsUUOK8dlvUM1MYVFl7rXXQmsBQyUzlg8SJB7VQNTaEciGdF1l_hjw" type="text/javascript"></script>
+
+    
+
+    <script type="text/javascript">
+
+
+
+		function GenerateMap()
+
+		{
+
+			// Create the map
+
+			var map = new GMap2(document.getElementById("Map"));
+
+			map.addControl(new GLargeMapControl());
+
+            
+
+            //Center the map
+
+		    var startPoint = new GLatLng(42.2773088, -83.7350464);
+
+			map.setCenter(startPoint, 12);
+
+
+
+            //Draw a circle on map around startPoint, with radius 2 miles and 40 points
+
+            drawCircle(map, startPoint, 2, 40);
+
+		}     
+
+    
+
+        var poly = [] ; 
+
+        var line ; 
+
+
+
+        // Draw a circle on map around center (radius in miles)
+
+        // Modified by Jeremy Schneider based on http://maps.huge.info/dragcircle2.htm
+
+        function drawCircle(map, center, radius, numPoints)
+
+        {
+
+            poly = [] ; 
+
+            var lat = center.lat() ;
+
+            var lng = center.lng() ;
+
+            var d2r = Math.PI/180 ;                // degrees to radians
+
+            var r2d = 180/Math.PI ;                // radians to degrees
+
+            var Clat = (radius/3963) * r2d ;      //  using 3963 as earth's radius
+
+            var Clng = Clat/Math.cos(lat*d2r);
+
+            
+
+            //Add each point in the circle
+
+            for (var i = 0 ; i < numPoints ; i++)
+
+            {
+
+                var theta = Math.PI * (i / (numPoints / 2)) ;
+
+                Cx = lng + (Clng * Math.cos(theta)) ;
+
+                Cy = lat + (Clat * Math.sin(theta)) ;
+
+                poly.push(new GLatLng(Cy,Cx)) ;
+
+            }
+
+
+
+            //Remove the old line if it exists
+
+            if(line)
+
+            {
+
+                map.removeOverlay(line) ;
+
+            }
+
+            
+
+            //Add the first point to complete the circle
+
+            poly.push(poly[0]) ;
+
+
+
+            //Create a line with teh points from poly, red, 3 pixels wide, 80% opaque
+
+            line = new GPolyline(poly,'#FF0000', 3, 0.8) ;
+
+            
+
+            map.addOverlay(line) ;
+
+        }
+
+    
+
+    </script>
+
+    
+
+</head>
+
+<body onload="GenerateMap()">
+
+    <h1>Simple Draw a Circle with Google Maps</h1>
+
+    
+
+    <div id="Map" style="width: 400px; height: 400px; border: solid 2px black;" ></div>
+
+</body>
+
+</html>
+

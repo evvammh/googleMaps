@@ -1,0 +1,137 @@
+body{
+font: normal small Arial, Helvetica, sans-serif;
+color: #78737A;
+text-align:justify;
+font-size:13px;
+margin-top:5px;
+margin-left:40px;
+margin-right:0px;
+margin-bottom:0px;
+background-color:#D7F2FB;
+
+background-image:url(images/top_bg.gif); background-repeat:repeat-x;
+}
+#border
+{width:779px;}
+.name
+{font-family:"Century Gothic", "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
+color:#ffffff;
+height:84px;
+font-size:32px;}
+#links_bg
+{width:840px;
+height:35px;}
+.toplinks
+{width:119px;
+float:left;
+line-height:35px;
+height:35px;
+text-align:center;}
+.toplinks a
+{color:#2A393E;
+font-weight:bold;
+text-decoration:none;}
+.toplinks a:hover
+{color:#2A393E;
+background-image:url(images/as.jpg); background-repeat:no-repeat;
+display:block;}
+.gap
+{height:10px;
+font-size:1px;}
+#header
+{width:779px;
+height:168px;}
+#quick-bg
+{width:201px;
+height:168px;
+background-color:#2A393E;
+float:left;}
+#gap
+{width:4px;
+height:168px;
+font-size:1px;
+float:left;}
+#image
+{width:574px;
+height:168px;
+background-image:url(images/sports.jpg); background-repeat:no-repeat;
+float:left;}
+#quick_heading
+{background-image:url(images/green-grass.gif); background-repeat:no-repeat;
+line-height:40px;
+font-size:15px;
+color:#ffffff;
+padding-left:10px;
+font-weight:bold;
+height:40px;}
+.quicklinks
+{padding-left:10px;
+line-height:33px;
+height:33px;}
+.quicklinks a
+{color:#C7CCC5;
+font-weight:bold;}
+.quicklinks a:hover
+{color:#75BD02;}
+#spacer
+{width:201px;
+float:left;
+height:4px;
+font-size:1px;
+background-color:#2A393E;}
+#spacer2
+{width:578px;
+float:left;
+height:4px;
+font-size:1px;}
+#heading-bg
+{background-color:#2A393E;
+height:35px;
+line-height:35px;
+color:#75BD02;
+font-weight:bold;
+clear:left;
+text-align:right;
+padding-right:15px;}
+#main
+	{
+	padding-left:10px;
+	padding-right:10px;
+	background-color:#ffffff;
+	padding-top:10px;
+	padding-bottom:10px;}
+	a{color:#69AB00;
+	text-decoration:underline;
+	}
+a:hover{color:#000000;
+text-decoration:underline;
+}
+#bottom
+{height:10px;
+line-height:20px;
+width:1100px;}
+.sap
+{width:0px;
+float:left;
+height:60px;
+color:#2A393E;
+text-align:center;}
+.sapup
+{width:1px;
+float:left;
+height:60px;
+color:blue;
+text-align:right;}
+.bottomlink
+{width:110px;
+height:30px;
+text-align:center;
+color:#2A393E;
+float:left;}
+.bottomlink a
+{color:#000000;
+text-decoration:none;}
+.bottomlink a:hover
+{color:#000000;
+text-decoration:underline;}
+
